@@ -4,7 +4,7 @@ require("dotenv").config();
 const db = require("./utils/db");
 
 const app = express();
-const port = process.env.NODE_ENV === "production" ? 8700 : 3000;
+const port = process.env.NODE_ENV === "production" ? 5000 : 3000;
 const host = process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost";
 
 app.set("view engine", "ejs");
