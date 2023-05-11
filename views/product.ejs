@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Tag</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody class="table-stripped table-hover">
+      <%let n = 1; for (item of data) { %>
+      <tr>
+        <th scope="row"><%= n %></th>
+        <td><%=item.name%></td>
+        <td><%=item.price%></td>
+        <td><%=item.category%></td>
+        <td><%=item.description%></td>
+        <td>
+          <a href="/product/update/<%= item.id %>"
+            ><button type="button" class="btn btn-primary">update</button></a
+          >
+          <a href="/product/delete/<%= item.id %>"
+            ><button type="button" class="btn btn-danger">delete</button></a
+          >
+        </td>
+      </tr>
+      <% n++ %> <% } %>
+    </tbody>
+  </table>
+</div>
+<div class="container mt-5">
+  <a href="/product/add"
+    ><button type="button" class="btn btn-primary">Insert</button></a
+  >
+</div>
