@@ -4,7 +4,7 @@ require("dotenv").config();
 const db = require("./utils/db");
 
 const app = express();
-const port = process.env.NODE_ENV === "production" ? 5000 : 3000;
+const port = process.env.NODE_ENV === "production" ? 3000 : 9099;
 const host = process.env.NODE_ENV === "production" ? "0.0.0.0" : "localhost";
 
 function sanitize(str) {
