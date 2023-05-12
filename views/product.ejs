@@ -18,10 +18,10 @@
         <td><%=item.category%></td>
         <td><%=item.description%></td>
         <td>
-          <a href="/product/update/<%= item.id %>"
+          <a href="/update/<%= item.id %>"
             ><button type="button" class="btn btn-primary">update</button></a
           >
-          <a href="/product/delete/<%= item.id %>"
+          <a href="/delete/<%= item.id %>"
             ><button type="button" class="btn btn-danger">delete</button></a
           >
         </td>
@@ -31,7 +31,7 @@
   </table>
 </div>
 <div class="container mt-5">
-  <a href="/product/add"
+  <a href="/add"
     ><button type="button" class="btn btn-primary">Insert</button></a
   >
 </div>
